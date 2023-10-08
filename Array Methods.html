@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The length Property</h2>
+
+<p>The length property returns the length of an array:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+//let size = fruits.length;
+document.getElementById("demo").innerHTML = fruits.length;
+</script>
+<hr>
+
+
+<h2>The join() Method</h2>
+
+<p>The join() method joins array elements into a string.</p>
+<p>It this example we have used " * " as a separator between the elements:</p>
+
+<p id="demo1"></p>
+
+<script>
+const vegetables = ["Tomato", "Potato", "Carrot", "Beetroot"];
+document.getElementById("demo1").innerHTML = vegetables.join(" * ");
+</script>
+
+<hr>
+
+
+<h2>The pop() Method</h2>
+
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+const trees = ["Neem Tree", "Mango Tree", "Apple Tree", "Mango Tree"];
+document.getElementById("demo2").innerHTML = trees;
+trees.pop();
+document.getElementById("demo3").innerHTML = trees;
+//document.getElementById("demo3").innnerHTML=trees.pop();
+</script>
+<hr>
+<h2>The push() Method</h2>
+
+<p>The push() method returns the new array length:</p>
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+const animal = ["Lion", "Tiger", "Elephant", "Cheta"];
+
+document.getElementById("demo4").innerHTML = animal.push("Hyena");
+document.getElementById("demo5").innerHTML = animal;
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<h2>Removing element Using Splice:</h2>
+<script>
+var Trees = ["Apple Tree", "Mango Tree", "Orange Tree", "Neem Tree","Banyan Tree"];
+document.write('Array List:  ' + Trees  + "<br>");
+var removed = Trees.splice(0,2); // Remove the second element
+document.write('After removing the element:  ' + Trees + "<br>"); // Print the current element in arry
+document.write('Removed Element: ' + removed + "<br>"); // Print the removing element
+document.write('Length of removed element: ' + removed.length + "<br>"); //Print the removed length
+</script>
+<h2>Adding element Using Splice:</h2>
+<script>
+document.write('Array List:  ' + Trees + "<br>");
+removed = Trees.splice(2,0, "Tree1", "Tree2"); //Inserting the Two element
+document.write('After Inserting the element:  ' + Trees +"<br>" + "<hr>"); // Print the current element in array
+</script>
+<h2>Slice In JS:</h2>
+<script>
+var cars = ["Audi", "Hyundai", "Jeep", "Ford", "Jaguar","Skoda","BMW"];
+document.write(cars + "<br>");
+document.write(cars.slice(3) + "<br>");
+document.write(cars.slice(-3) + "<br>");
+document.write(cars.slice(2, -3) + "<br>");
+</script>
+<h2>Join In JS:</h2>
+<script>
+document.write(Trees.join() + "<br>");
+document.write(Trees.join(":") + "<br>");
+document.write(Trees.join("-") + "<br>");
+document.write(Trees.join(", ") + "<br>");
+</script>
+<h2> Concat in JS:</h2>
+<script>
+var num1 = ["10", "20","30"];
+var num2 = ["40", "50", "60"];
+var num = num1.concat(num2);
+document.write(num);
+</script>
+</body>
+</html>

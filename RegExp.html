@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions Using exec</h2>
+<p id="demo"></p>
+<script>
+const obj = /e/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions Using Test</h2>
+<p>Search for an "e" in the next paragraph:</p>
+<p id="p01">The best things in life are free!</p>
+<p id="demo1"></p>
+<script>
+let text1 = document.getElementById("p01").innerHTML;
+const pattern = /e/;
+document.getElementById("demo1").innerHTML = pattern.test(text1);
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions using Quantifier n+</h2>
+<p>Do a global search for at least one "o" in a string:</p>
+<p id="demo2"></p>
+<script>
+let text2 = "Hellooo World! Hello W3Schools!"; 
+let result2 = text2.match(/o+/g);
+document.getElementById("demo2").innerHTML = result2;
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions using Quantifier n*</h2>
+<p>Do a global search for an "l", followed by zero or more "o" characters:</p>
+<p id="demo3"></p>
+<script>
+let text3 = "Hellooo World! Hello W3Schools!"; 
+let result3 = text3.match(/lo*/g);
+document.getElementById("demo3").innerHTML = result3;
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions Quantifier n?</h2>
+<p>Do a global search for a "1", followed by zero or one "0" characters:</p>
+<p id="demo4"></p>
+<script>
+let text4 = "1, 100 or 1000?";
+let result4 = text4.match(/10?/g);
+document.getElementById("demo4").innerHTML = result4;
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions Brackets [abc]</h2>
+<p>Do a global search for the character "h" in a string:</p>
+<p id="demo5"></p>
+<script>
+let text5 = "Is this all there is?";
+let result5 = text5.match(/[h]/g);
+document.getElementById("demo5").innerHTML = result5;
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions[0-9]</h2>
+<p>Do a global search for the numbers 1 to 4 in a string:</p>
+<p id="demo6"></p>
+<script>
+let text6 = "123456789";
+let result6 = text6.match(/[1-4]/g);
+document.getElementById("demo6").innerHTML = result6;
+</script>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Regular Expressions Brackets(x|y)</h2>
+<p>Do a global search for any of the specified alternatives (red|green):</p>
+<p id="demo7"></p>
+<script>
+let text7 = "re, green, red, green, gren, gr, blue, yellow";
+let result7 = text7.match(/(red|green)/g);
+document.getElementById("demo7").innerHTML = result7;
+</script>
+</body>
+</html>
+
+

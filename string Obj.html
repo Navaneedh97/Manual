@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<h2>at() Method</h2>
+<p>The at() method returns an indexed character from a string.</p>
+<p id="demo"></p>
+<script>
+let text = "W3schools";
+let character = text.at(0);
+document.getElementById("demo").innerHTML = character;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The endsWith() Method</h2>
+<p>endsWith() returns true if a string ends with a specified string, otherwise false.</p>
+<p>Check if "Hello world" ends with "world":</p>
+
+<p id="demo1"></p>
+<script>
+let text1 = "Hello world";
+let result1 =  text1.endsWith("world");
+document.getElementById("demo1").innerHTML = result1;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The includes() Method</h2>
+<p>includes() returns true if a string contains a specified string.</p>
+<p>Find "world":</p>
+<p id="demo2"></p>
+<script>
+let text2 = "Hello world, welcome to the universe.";
+let result2 = text2.includes("welcome");
+document.getElementById("demo2").innerHTML = result2;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The indexOf() Method</h2>
+<p>indexOf() returns the position of the first occurrence of a value in a string.</p>
+<p>Find "welcome":</p>
+<p id="demo3"></p>
+<script>
+let text3 = "Hello world, welcome to the universe.";
+let result3 = text3.indexOf("welcome");
+document.getElementById("demo3").innerHTML = result3;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The lastIndexOf() Method</h2>
+<p>lastIndexOf() returns the index of the last occurrence of a specified value in a string.</p>
+<p>Find the last occurence of "planet":</p>
+<p id="demo4"></p>
+<script>
+let text4 = "Hello planet earth, you are a great planet.";
+let result4 = text4.lastIndexOf("planet");
+document.getElementById("demo4").innerHTML = result4;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The padStart() Method</h2>
+<p>The padStart() method pads a string from the start.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+<p id="demo5"></p>
+<script>
+let text5 = "5";
+let result5 = text5.padStart(4,"0");
+document.getElementById("demo5").innerHTML = result5;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The repeat() Method</h2>
+<p>repeat() returns a new string with a number of copies of a string:</p>
+<p id="demo6"></p>
+<script>
+let text6 = "Hello world!";
+let result6 = text6.repeat(2);
+document.getElementById("demo6").innerHTML = result6;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The replace() Method</h2>
+<p>replace() searches a string for a value,
+and returns a new string with the specified value(s) replaced:</p>
+<p id="demo7">Visit Microsoft!</p>
+<script>
+let text7 = document.getElementById("demo").innerHTML; 
+document.getElementById("demo7").innerHTML = text7.replace("Microsoft", "W3Schools");
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The search() Method</h2>
+<p>search() searches a string for a value and returns the position of the first match:</p>
+<p id="demo8"></p>
+<script>
+let text8 = "Mr. Blue has a blue house"
+let position = text8.search("Blue");
+document.getElementById("demo8").innerHTML = position;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The slice() Method</h2>
+<p>slice() extracts a part of a string and returns the extracted part:</p>
+<p id="demo9"></p>
+<script>
+let text9 = "Hello world!";
+let result9 = text9.slice(0, 5);
+document.getElementById("demo9").innerHTML = result9;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The split() Method</h2>
+<p>split() splits a string into an array of substrings, and returns the array:</p>
+<p id="demo10"></p>
+<script>
+let text10 = "How are you doing today?";
+const myArray = text10.split(" ");
+document.getElementById("demo10").innerHTML = myArray; 
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The substr() Method</h2>
+<p>substr() extracts a part of a string:</p>
+<p id="demo11"></p>
+<script>
+let text11 = "Hello world!";
+let result11 = text11.substr(1, 4);
+document.getElementById("demo11").innerHTML = result11;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The toLocaleLowerCase() Method</h2>
+<p>toLocaleLowerCase() converts a string to lowercase letters, using current locale:</p>
+<p id="demo12"></p>
+<script>
+let text12 = "Hello World!";
+let result12 = text12.toLocaleLowerCase();
+document.getElementById("demo12").innerHTML = result12;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The toLocaleUpperCase() Method</h2>
+<p>toLocaleUpperCase() converts a string to uppercase letters, using current locale:</p>
+<p id="demo13"></p>
+<script>
+let text13 = "Hello World!";
+let result13 = text13.toLocaleUpperCase();
+document.getElementById("demo13").innerHTML = result13;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The toLowerCase() Method</h2>
+<p>toLowerCase() converts a string to lowercase letters:</p>
+<p id="demo14"></p>
+<script>
+let text14 = "Hello World!";
+let result14 = text14.toLowerCase();
+document.getElementById("demo14").innerHTML = result14;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The trim() Method</h2>
+<p>trim() removes whitespace from both sides of a string:</p>
+<pre><p id="demo15"></p></pre>
+<pre><p id="demo16"></p></pre>
+
+<script>
+let text15 = "     Hello World!     ";
+let result15 = text15.trim();
+document.getElementById("demo15").innerHTML = text15;
+document.getElementById("demo16").innerHTML = result15;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The valueOf() Method</h2>
+<p>valueOf() returns the primitive value of a string:</p>
+<p id="demo17"></p>
+<script>
+let text17 = "Hello World!";
+let result17 = text17.valueOf();
+document.getElementById("demo17").innerHTML = result17;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The prototype Property</h2>
+<p>The prototype property allows you to add new properties and methods to existing objects.</p>
+<p>Add a salary to all employees:</p>
+<p id="demo18"></p>
+
+<script>
+function employee(name, jobtitle, born) {
+  this.name = name;
+  this.jobtitle = jobtitle;
+  this.born = born;
+}
+employee.prototype.salary = 2000;
+
+const fred = new employee("Fred Flintstone", "Caveman", 1970);
+document.getElementById("demo18").innerHTML = fred.salary;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The padStart() Method</h2>
+<p>The padStart() method pads a string from the start.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+<p id="demo19"></p>
+<script>
+let text19 = "5";
+let result19 = text19.padStart(4,"0");
+document.getElementById("demo19").innerHTML = result19;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The padEnd() Method</h2>
+<p>The padEnd() method pads a string at the end.</p>
+<p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+<p id="demo20"></p>
+<script>
+let text20 = "5";
+let result20 = text20.padEnd(4,"0");
+document.getElementById("demo20").innerHTML = result20;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The match() Method</h2>
+<p>match() searches for a match in a string.</p>
+<p>Do a search for "ain":</p>
+<p id="demo21"></p>
+<script>
+let text21 = "The rain in SPAIN stays mainly in the plain";
+let result21 = text21.match("ain");
+ document.getElementById("demo21").innerHTML = result21;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The codePointAt() Method</h2>
+<p>codePointAt() returns the code point at a specified position in a string.</p>
+<p>Get the code point at the first character:</p>
+<p id="demo22"></p>
+<script>
+let text22 = "HELLO WORLD";
+let code = text22.codePointAt(0);
+document.getElementById("demo22").innerHTML = code;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The constructor Property</h2>
+<p>The constructor property returns the function that created the String prototype:</p>
+<p id="demo23"></p>
+<script>
+let text23 = "Hello World!";
+let result23 = text23.constructor;
+document.getElementById("demo23").innerHTML = result23;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The String.fromCharCode() Method</h2>
+<p>String.fromCharCode() converts Unicode values to strings.</p>
+<p>Convert 65 to a string:</p>
+<p id="demo24"></p>
+<script>
+let text24 = String.fromCharCode(65);
+document.getElementById("demo24").innerHTML = text24; 
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The includes() Method</h2>
+<p>includes() returns true if a string contains a specified string.</p>
+<p>Find "world":</p>
+<p id="demo25"></p>
+<script>
+let text25 = "Hello world, welcome to the universe.";
+let result25 = text25.includes("world");
+document.getElementById("demo25").innerHTML = result25;
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The toString() Method</h2>
+<p>toString() returns the content of a string:</p>
+<p id="demo26"></p>
+<script>
+let text26 = "Hello World!";
+let result26 = text26.toString();
+document.getElementById("demo26").innerHTML = result26; 
+</script>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The startsWith() Method</h2>
+<p>startsWith() returns true if a string starts with a specified string:</p>
+<p id="demo27"></p>
+<script>
+let text27 = "Hello world, welcome to the universe.";
+let result27 = text27.startsWith("Hello");
+document.getElementById("demo27").innerHTML = result27;
+</script>
+</body>
+</html>
